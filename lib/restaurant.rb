@@ -21,7 +21,7 @@ class Restaurant
     end
 
     def open_for_lunch?
-        if Time.new(2020, 10, 07, @opening_time[0..1], @opening_time[3..4]) < Time.new(2020, 10, 07, 12)
+        if Time.new(2020, 10, 07, @opening_time[0..1], @opening_time[3..4]) < Time.new(2020, 10, 07, 12) 
             true
         else
             false
