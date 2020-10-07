@@ -35,10 +35,9 @@ class Restaurant
         end
         menu_dish_names
     end
-
+    #changed the time format output
     def announce_closing_time(hours)
         closing_time = Time.new(2020, 10, 07, @opening_time) + hours*60*60
-        closing_time.strftime("%l:%M")
         "#@name will be closing at #{closing_time.strftime('%l:%M%p')}"
     end
 end
